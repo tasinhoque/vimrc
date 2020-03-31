@@ -42,6 +42,8 @@ vnoremap <Right> <Nop>
 vnoremap <Home> <Nop>
 vnoremap <End> <Nop>
 
+nnoremap <M-i> :PlugInstall<CR>
+
 let g:tagbar_autofocus = 1
 let g:EasyClipAutoFormat = 1
 let g:yankring_clipboard_monitor = 0
@@ -58,7 +60,7 @@ set hlsearch incsearch
 set clipboard=unnamedplus
 set number relativenumber
 set splitbelow splitright
-set shiftwidth=4 tabstop=4
+set shiftwidth=2 tabstop=2
 set autoindent smartindent
 set timeoutlen=1000 
 set timeout ttimeoutlen=50
@@ -80,11 +82,17 @@ Plug 'svermeulen/vim-easyclip'
 Plug 'vim-scripts/loremipsum'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
-Plug 'valloric/youcompleteme'
 Plug 'alvan/vim-closetag'
-Plug 'scrooloose/syntastic'
+Plug 'jiangmiao/auto-pairs'
+Plug 'shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'mileszs/ack.vim'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 
 colorscheme gruvbox
 
