@@ -83,7 +83,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'valloric/youcompleteme'
 Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
-Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
