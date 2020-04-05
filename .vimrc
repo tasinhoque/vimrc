@@ -44,31 +44,33 @@ vnoremap <End> <Nop>
 
 nnoremap <M-i> :PlugInstall<CR>
 
+let g:indentLine_setColors = 0
 let g:tagbar_autofocus = 1
 let g:EasyClipAutoFormat = 1
 let g:yankring_clipboard_monitor = 0
 let g:auto_save = 1
+let g:indentLine_char = '│'
 
-set colorcolumn=80
+set colorcolumn=81
 set noshowmode
 set hidden
 set autoread
 set background=dark
 set linebreak
-set cursorline
 set hlsearch incsearch
 set clipboard=unnamedplus
 set number relativenumber
 set splitbelow splitright
-set shiftwidth=2 tabstop=2
+set shiftwidth=2 tabstop=2 expandtab
 set autoindent smartindent
-set timeoutlen=1000 
+set timeoutlen=1000
 set timeout ttimeoutlen=50
 set fillchars+=vert:\│
-set list lcs=tab:\│\ 
 
 call plug#begin()
 
+Plug 'reedes/vim-lexical'
+Plug 'Yggdroot/indentLine'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'djoshea/vim-autoread'
 Plug 'tpope/vim-fugitive'
@@ -97,26 +99,17 @@ let g:deoplete#enable_at_startup = 1
 colorscheme gruvbox
 
 if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
+  let g:airline_symbols = {}
 endif
 
 " unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
 let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.maxlinenr = '㏑'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
 let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = 'Ɇ'
-let g:airline_symbols.whitespace = 'Ξ'
 
 " powerline symbols
 let g:airline_left_sep = ''
@@ -125,12 +118,22 @@ let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.dirty='⚡'
+let g:airline_symbols.linenr = ''
 
 let c='a'
 while c <= 'z'
-	exec "set <A-".c.">=\e".c
-	exec "imap \e".c." <A-".c.">"
-	let c = nr2char(1+char2nr(c))
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
 endw
+
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd,textile,text call lexical#init()
+augroup END
+
+let g:lexical#spell = 1
+
+set nocompatible
+filetype plugin on
