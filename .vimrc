@@ -5,9 +5,6 @@ nnoremap <M-l> <C-w>l
 nnoremap <M-x> <C-w>c
 nnoremap <M-v> <C-w>v
 
-nnoremap ZZ <Nop>
-nnoremap ZQ <Nop>
-
 nnoremap <silent> <M-c> :noh<CR>
 nnoremap <silent> <M-e> :NERDTreeFind<CR>
 nnoremap <silent> <M-f> :CtrlPTag<CR>
@@ -17,39 +14,7 @@ nnoremap <M-z> :wqa<CR>
 nnoremap <M-q> :qa!<CR>
 nnoremap <M-s> :wa<CR>
 nnoremap <M-g> :!ctags -R<CR>
-
-imap <C-v> <plug>EasyClipInsertModePaste
-cmap <C-v> <plug>EasyClipCommandModePaste
-
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Home> <Nop>
-inoremap <End> <Nop>
-
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-nnoremap <Home> <Nop>
-nnoremap <End> <Nop>
-
-vnoremap <Up> <Nop>
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-vnoremap <Home> <Nop>
-vnoremap <End> <Nop>
-
 nnoremap <M-i> :PlugInstall<CR>
-
-let g:indentLine_setColors = 0
-let g:tagbar_autofocus = 1
-let g:EasyClipAutoFormat = 1
-let g:yankring_clipboard_monitor = 0
-let g:auto_save = 1
-let g:indentLine_char = '│'
 
 set colorcolumn=81
 set noshowmode
@@ -95,6 +60,9 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
+let g:EasyClipAutoFormat = 1
+let g:indentLine_char = '│'
+let g:lexical#spell = 1
 
 colorscheme gruvbox
 
@@ -102,7 +70,10 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-" unicode symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 let g:airline_symbols.crypt = '🔒'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.maxlinenr = '㏑'
@@ -110,12 +81,6 @@ let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = 'Ɇ'
-
-" powerline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.dirty='⚡'
@@ -132,8 +97,3 @@ augroup lexical
   autocmd!
   autocmd FileType markdown,mkd,textile,text call lexical#init()
 augroup END
-
-let g:lexical#spell = 1
-
-set nocompatible
-filetype plugin on
