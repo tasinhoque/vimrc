@@ -1,27 +1,16 @@
 {
-  "terminal.integrated.shell.linux": "/bin/bash",
+  "extensions.ignoreRecommendations": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "One Dark Pro",
   "editor.formatOnSave": true,
   "explorer.confirmDelete": false,
   "editor.tabSize": 2,
-  // prettier settings start
-  // "prettier.trailingComma": "none",
-  // "prettier.jsxSingleQuote": true,
-  // "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  // "prettier.semi": false,
-  // prettier settings end
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.enableTrash": false,
   "editor.rulers": [80],
-  "editor.multiCursorModifier": "ctrlCmd",
   "explorer.confirmDragAndDrop": false,
-  "rest-client.fontFamily": "monospace",
+  "rest-client.fontFamily": "'Fira Code', monospace",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnPaste": true,
   "diffEditor.renderSideBySide": true,
   "git.autofetch": true,
@@ -34,7 +23,6 @@
     "workbench.view.extensions"
   ],
   "editor.renameOnType": true,
-  "liveServer.settings.donotShowInfoMsg": true,
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
   "emmet.triggerExpansionOnTab": true,
@@ -44,12 +32,6 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["p"],
@@ -57,10 +39,6 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"]
-    },
     {
       "before": ["Z", "Z"],
       "commands": [":wq"]
@@ -72,18 +50,6 @@
     {
       "before": ["<leader>", "w"],
       "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "after": ["\"", "_", "d", "d"]
-    },
-    {
-      "before": ["\"", "+", "p"],
-      "after": ["p"]
-    },
-    {
-      "before": ["\"", "+", "P"],
-      "after": ["P"]
     },
     {
       "before": ["<C-l>"],
@@ -104,6 +70,10 @@
     {
       "before": ["]", "B"],
       "commands": [":tablast"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"]
     }
   ],
   "vim.handleKeys": {
@@ -111,9 +81,7 @@
     "<C-j>": false,
     "<C-d>": false,
     "<C-u>": false,
-    "<C-n>": false,
-    "<C-h>": false,
-    "<C-f>": false
+    "<C-n>": false
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -121,23 +89,16 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "githubIssues.queries": [
-    {
-      "label": "My Issues",
-      "query": "default"
-    },
-    {
-      "label": "Created Issues",
-      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
-    }
-  ],
   "debug.javascript.usePreview": false,
-  "workbench.editor.enablePreview": false,
-  "gitlens.gitCommands.skipConfirmations": [
-    "fetch:command",
-    "stash-push:command",
-    "switch:command",
-    "branch-create:menu"
-  ],
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.semi": false,
+  "prettier.jsxSingleQuote": true
 }
