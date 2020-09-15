@@ -6,12 +6,17 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+pageup",
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+tab",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+pagedown",
+    "key": "ctrl+tab",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   }
