@@ -5,7 +5,6 @@
   "editor.tabSize": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.enableTrash": false,
-  "editor.rulers": [80],
   "explorer.confirmDragAndDrop": false,
   "rest-client.fontFamily": "'Fira Code', monospace",
   "editor.suggestSelection": "first",
@@ -23,7 +22,6 @@
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["p"],
@@ -35,8 +33,10 @@
     "<C-j>": false,
     "<C-d>": true,
     "<C-u>": true,
-    "<C-f>": true,
-    "<C-b>": true
+    "<C-f>": false,
+    "<C-b>": true,
+    "<C-r>": false,
+    "<C-h>": false
   },
   "editor.fontLigatures": true,
   "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
@@ -46,14 +46,48 @@
   "prettier.arrowParens": "avoid",
   "prettier.semi": false,
   "prettier.jsxSingleQuote": true,
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-  "editor.fontSize": 13,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "extensions.ignoreRecommendations": true,
   "git.ignoreMissingGitWarning": true,
   "editor.cursorBlinking": "solid",
-  "editor.lineNumbers": "relative",
   "editor.acceptSuggestionOnEnter": "off",
   "code-runner.clearPreviousOutput": true,
   "code-runner.saveFileBeforeRun": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "Microservice",
+    "Shohopathi",
+    "brelaz",
+    "clsx",
+    "peloton",
+    "stoi"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.linkedEditing": true,
+  "liveServer.settings.donotShowInfoMsg": true
 }
