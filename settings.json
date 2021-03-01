@@ -29,14 +29,13 @@
     }
   ],
   "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-b>": false,
     "<C-k>": false,
     "<C-j>": false,
+    "<C-h>": false,
     "<C-d>": true,
-    "<C-u>": true,
-    "<C-f>": false,
-    "<C-b>": true,
-    "<C-r>": false,
-    "<C-h>": false
+    "<C-u>": true
   },
   "editor.fontLigatures": true,
   "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
@@ -44,8 +43,6 @@
   "git.enableSmartCommit": true,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
-  "prettier.semi": false,
-  "prettier.jsxSingleQuote": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "extensions.ignoreRecommendations": true,
   "git.ignoreMissingGitWarning": true,
@@ -53,7 +50,6 @@
   "editor.acceptSuggestionOnEnter": "off",
   "code-runner.clearPreviousOutput": true,
   "code-runner.saveFileBeforeRun": true,
-  "window.zoomLevel": 0,
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -72,7 +68,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.userWords": [
+    "DRMC",
+    "Hatirjheel",
     "Microservice",
+    "Rasterization",
     "Shohopathi",
     "brelaz",
     "clsx",
@@ -89,5 +88,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.linkedEditing": true,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Default Light+"
 }
