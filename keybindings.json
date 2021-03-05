@@ -6,28 +6,7 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+w",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+pageup",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+alt+m",
-    "command": "workbench.action.toggleMaximizedPanel",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "ctrl+alt+m",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminalFocus"
+    "key": "ctrl+alt+b",
+    "command": "python.execInTerminal"
   }
 ]
