@@ -1,12 +1,14 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.env.windows": {
+    "COMPOSE_DOCKER_CLI_BUILD": "0"
+  },
+  "files.eol": "\n",
   "editor.formatOnSave": true,
   "explorer.confirmDelete": false,
   "editor.tabSize": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.enableTrash": false,
   "explorer.confirmDragAndDrop": false,
-  "rest-client.fontFamily": "'Fira Code', monospace",
   "editor.suggestSelection": "first",
   "editor.formatOnPaste": true,
   "terminal.integrated.commandsToSkipShell": [
@@ -17,40 +19,18 @@
     "workbench.view.debug",
     "workbench.view.extensions"
   ],
-  "editor.renameOnType": true,
+  "terminal.integrated.fontWeight": "500",
   "editor.tabCompletion": "on",
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["p"],
-      "after": ["p", "g", "v", "y"]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-f>": false,
-    "<C-b>": false,
-    "<C-k>": false,
-    "<C-j>": false,
-    "<C-h>": false,
-    "<C-d>": true,
-    "<C-u>": true
-  },
   "editor.fontLigatures": true,
   "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "extensions.ignoreRecommendations": true,
   "git.ignoreMissingGitWarning": true,
   "editor.cursorBlinking": "solid",
   "editor.acceptSuggestionOnEnter": "off",
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.saveFileBeforeRun": true,
-  "C_Cpp.clang_format_fallbackStyle": "Google",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -63,21 +43,54 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "java.configuration.checkProjectSettingsExclusions": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.userWords": [
+    "Antifragility",
     "DRMC",
+    "Gantt",
+    "HPDS",
     "Hatirjheel",
+    "Healthcheck",
+    "Leaderboard",
+    "Microhits",
     "Microservice",
+    "Ogimi",
+    "Ogimi’s",
+    "Okinawans",
     "Rasterization",
+    "Roadmap",
+    "SRGP",
     "Shohopathi",
+    "antifragile",
+    "bkash",
     "brelaz",
+    "choiceless",
+    "cloudinary",
     "clsx",
+    "dirtbag",
+    "downvote",
+    "downvotes",
+    "fati",
+    "fuckedness",
+    "ikigai",
+    "isocost",
+    "isoquant",
+    "logotherapy",
+    "microhit",
+    "midafternoon",
+    "middlewares",
+    "nagad",
+    "onlinesohopathi",
     "peloton",
-    "stoi"
+    "s",
+    "stoi",
+    "transformative",
+    "upvote",
+    "upvotes"
   ],
+  "cSpell.diagnosticLevel": "Hint",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -88,7 +101,106 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.linkedEditing": true,
-  "liveServer.settings.donotShowInfoMsg": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Default Light+"
+  "git.autofetch": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "npm.enableRunFromFolder": true,
+  "prettier.prettierPath": "C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\prettier",
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.codeLens.enabled": false,
+  "workbench.startupEditor": "welcomePage",
+  "prettier.semi": false,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": []
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-w>": false,
+    "<C-b>": false,
+    "<C-k>": false,
+    "<C-j>": false,
+    "<C-h>": false,
+    "<C-d>": true,
+    "<C-u>": true
+  },
+  "redhat.telemetry.enabled": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "[ ]": {
+      "background": "#ff000080",
+      "iconColor": "green"
+    },
+    "[x]": {
+      "background": "#90ee90",
+      "iconColor": "green"
+    },
+    "TODO": {
+      "background": "#ff000080",
+      "iconColor": "green",
+      "foreground": "#fff"
+    },
+    "FIXME": {
+      "background": "#ff000080",
+      "iconColor": "green",
+      "foreground": "#fff"
+    }
+  },
+  "markdown.styles": [
+    "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  "explorer.openEditors.visible": 0,
+  "workbench.settings.editor": "json",
+  "workbench.editor.untitled.hint": "hidden",
+  "markdownlint.config": {
+    "MD033": {
+      "allowed_elements": ["details", "summary", "br", "img"]
+    }
+  },
+  "debug.javascript.suggestPrettyPrinting": false,
+  "debug.javascript.autoAttachFilter": "disabled",
+  "jupyter.askForKernelRestart": false,
+  "workbench.activityBar.visible": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "workbench.colorTheme": "Default Light+",
+  "vim.easymotion": true,
+  "vim.leader": " ",
+  "vim.camelCaseMotion.enable": true,
+  "diffEditor.renderSideBySide": false
 }
