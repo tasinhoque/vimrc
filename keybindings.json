@@ -1,12 +1,19 @@
 [
-  { "key": "ctrl+`", "command": "workbench.action.terminal.focus" },
   {
-    "key": "ctrl+`",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.openSettings2"
   },
   {
     "key": "ctrl+alt+b",
-    "command": "python.execInTerminal"
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
   }
 ]
