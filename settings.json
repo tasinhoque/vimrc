@@ -1,206 +1,277 @@
 {
-  "terminal.integrated.env.windows": {
-    "COMPOSE_DOCKER_CLI_BUILD": "0"
+ "terminal.integrated.env.windows": {
+  "COMPOSE_DOCKER_CLI_BUILD": "0"
+ },
+ "files.eol": "\n",
+ "explorer.confirmDelete": false,
+ "javascript.updateImportsOnFileMove.enabled": "always",
+ "files.enableTrash": false,
+ "explorer.confirmDragAndDrop": false,
+ "editor.suggestSelection": "first",
+ "editor.formatOnPaste": true,
+ "terminal.integrated.commandsToSkipShell": [
+  "workbench.action.toggleSidebarVisibility",
+  "workbench.view.explorer",
+  "workbench.view.search",
+  "workbench.view.scm",
+  "workbench.view.debug",
+  "workbench.view.extensions"
+ ],
+ "editor.tabCompletion": "on",
+ "editor.fontLigatures": true,
+ "git.confirmSync": false,
+ "git.enableSmartCommit": true,
+ "extensions.ignoreRecommendations": true,
+ "git.ignoreMissingGitWarning": true,
+ "editor.cursorBlinking": "solid",
+ "editor.acceptSuggestionOnEnter": "off",
+ "editor.defaultFormatter": "esbenp.prettier-vscode",
+ "[yaml]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[markdown]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[python]": {
+  "editor.defaultFormatter": "ms-python.python",
+  "editor.tabSize": 4,
+  "editor.codeActionsOnSave": {
+   "source.organizeImports": true
   },
-  "files.eol": "\n",
-  "editor.formatOnSave": true,
-  "explorer.confirmDelete": false,
-  "editor.tabSize": 2,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.enableTrash": false,
-  "explorer.confirmDragAndDrop": false,
-  "editor.suggestSelection": "first",
-  "editor.formatOnPaste": true,
-  "terminal.integrated.commandsToSkipShell": [
-    "workbench.action.toggleSidebarVisibility",
-    "workbench.view.explorer",
-    "workbench.view.search",
-    "workbench.view.scm",
-    "workbench.view.debug",
-    "workbench.view.extensions"
-  ],
-  "terminal.integrated.fontWeight": "500",
-  "editor.tabCompletion": "on",
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  "extensions.ignoreRecommendations": true,
-  "git.ignoreMissingGitWarning": true,
-  "editor.cursorBlinking": "solid",
-  "editor.acceptSuggestionOnEnter": "off",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.formatOnType": true
+ },
+ "[sql]": {
+  "editor.defaultFormatter": "mtxr.sqltools"
+ },
+ "[json]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[jsonc]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "isort.args": ["--profile", "black"],
+ "vim.incsearch": true,
+ "vim.useSystemClipboard": true,
+ "vim.useCtrlKeys": true,
+ "vim.visualModeKeyBindingsNonRecursive": [
+  {
+   "before": ["p"],
+   "after": ["p", "g", "v", "y"]
+  }
+ ],
+ "vim.normalModeKeyBindingsNonRecursive": [
+  {
+   "before": ["<C-d>"],
+   "after": ["<C-d>", "z", "z"]
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "cSpell.userWords": [
-    "Antifragility",
-    "DRMC",
-    "Gantt",
-    "HPDS",
-    "Hatirjheel",
-    "Healthcheck",
-    "Leaderboard",
-    "Microhits",
-    "Microservice",
-    "Ogimi",
-    "Ogimi’s",
-    "Okinawans",
-    "Rasterization",
-    "Roadmap",
-    "SRGP",
-    "Shohopathi",
-    "antifragile",
-    "bkash",
-    "brelaz",
-    "choiceless",
-    "cloudinary",
-    "clsx",
-    "dirtbag",
-    "downvote",
-    "downvotes",
-    "fati",
-    "fuckedness",
-    "ikigai",
-    "isocost",
-    "isoquant",
-    "logotherapy",
-    "microhit",
-    "midafternoon",
-    "middlewares",
-    "nagad",
-    "onlinesohopathi",
-    "peloton",
-    "s",
-    "stoi",
-    "transformative",
-    "upvote",
-    "upvotes"
-  ],
-  "cSpell.diagnosticLevel": "Hint",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.linkedEditing": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "git.autofetch": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb",
-    "*.pdf": "latex-workshop-pdf-hook"
-  },
-  "npm.enableRunFromFolder": true,
-  "prettier.prettierPath": "C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\prettier",
-  "workbench.iconTheme": "material-icon-theme",
-  "gitlens.codeLens.enabled": false,
-  "workbench.startupEditor": "welcomePage",
-  "prettier.semi": false,
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.profiles.windows": {
-    "C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-      "args": []
-    }
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "vim.incsearch": true,
-  "vim.hlsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["p"],
-      "after": ["p", "g", "v", "y"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-f>": false,
-    "<C-w>": false,
-    "<C-b>": false,
-    "<C-k>": false,
-    "<C-j>": false,
-    "<C-h>": false,
-    "<C-d>": true,
-    "<C-u>": true
-  },
-  "redhat.telemetry.enabled": true,
-  "emmet.showExpandedAbbreviation": "never",
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
-  "todo-tree.highlights.customHighlight": {
-    "[ ]": {
-      "background": "#ff000080",
-      "iconColor": "green"
-    },
-    "[x]": {
-      "background": "#90ee90",
-      "iconColor": "green"
-    },
-    "TODO": {
-      "background": "#ff000080",
-      "iconColor": "green",
-      "foreground": "#fff"
-    },
-    "FIXME": {
-      "background": "#ff000080",
-      "iconColor": "green",
-      "foreground": "#fff"
-    }
-  },
-  "markdown.styles": [
-    "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-  ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "editor.minimap.enabled": false,
-  "workbench.sideBar.location": "right",
-  "explorer.openEditors.visible": 0,
-  "workbench.settings.editor": "json",
-  "workbench.editor.untitled.hint": "hidden",
-  "markdownlint.config": {
-    "MD033": {
-      "allowed_elements": ["details", "summary", "br", "img"]
-    }
-  },
-  "debug.javascript.suggestPrettyPrinting": false,
-  "debug.javascript.autoAttachFilter": "disabled",
-  "jupyter.askForKernelRestart": false,
-  "workbench.activityBar.visible": false,
-  "latex-workshop.view.pdf.viewer": "tab",
-  "workbench.colorTheme": "Default Light+",
-  "vim.easymotion": true,
-  "vim.leader": " ",
-  "vim.camelCaseMotion.enable": true,
-  "diffEditor.renderSideBySide": false
+  {
+   "before": ["<C-u>"],
+   "after": ["<C-u>", "z", "z"]
+  }
+ ],
+ "vim.handleKeys": {
+  "<C-b>": false,
+  "<C-h>": false,
+  "<C-j>": false,
+  "<C-g>": false,
+  "<C-w>": false,
+  "<C-s>": false,
+  "<C-f>": false,
+  "<C-k>": false
+ },
+ "editor.linkedEditing": true,
+ "typescript.updateImportsOnFileMove.enabled": "always",
+ "git.autofetch": true,
+ "workbench.editorAssociations": {
+  "*.ipynb": "jupyter-notebook",
+  "*.xlsx": "default"
+ },
+ "npm.enableRunFromFolder": true,
+ "workbench.iconTheme": "material-icon-theme",
+ "gitlens.codeLens.enabled": false,
+ "workbench.startupEditor": "none",
+ "terminal.integrated.tabs.enabled": false,
+ "terminal.integrated.defaultProfile.windows": "Git Bash",
+ "terminal.integrated.profiles.windows": {
+  "C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
+   "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+   "args": []
+  }
+ },
+ "security.workspace.trust.untrustedFiles": "open",
+ "explorer.openEditors.visible": 0,
+ "workbench.editor.untitled.hint": "hidden",
+ "markdownlint.config": {
+  "MD033": {
+   "allowed_elements": ["details", "summary", "br", "img"]
+  }
+ },
+ "debug.javascript.autoAttachFilter": "disabled",
+ "diffEditor.renderSideBySide": false,
+ "diffEditor.ignoreTrimWhitespace": false,
+ "python.linting.flake8Args": ["--max-line-length=88"],
+ "workbench.editor.enablePreview": false,
+ "terminal.integrated.fontSize": 18,
+ "notebook.outline.showCodeCells": true,
+ "markdown.preview.fontSize": 20,
+ "sqltools.highlightQuery": false,
+ "editor.wordWrap": "on",
+ "python.formatting.provider": "black",
+ "editor.bracketPairColorization.enabled": false,
+ "editor.codeActionsOnSave": {
+  "source.organizeImports": true
+ },
+ "python.terminal.executeInFileDir": true,
+ "python.linting.pylintCategorySeverity.warning": "Error",
+ "python.linting.pylintCategorySeverity.refactor": "Error",
+ "python.linting.pylintArgs": [
+  "--disable=unspecified-encoding",
+  "--disable=invalid-name",
+  "--disable=missing-module-docstring",
+  "--disable=missing-function-docstring",
+  "--generated-members",
+  "--ignored-modules=tensorflow.keras"
+ ],
+ "prettier.semi": false,
+ "notebook.output.textLineLimit": 50,
+ "terminal.integrated.shellIntegration.enabled": true,
+ "python.linting.pylintEnabled": true,
+ "cSpell.userWords": [
+  "albumentations",
+  "appearences",
+  "arange",
+  "argmax",
+  "argmin",
+  "asarray",
+  "atol",
+  "Audiobook",
+  "autocast",
+  "avgpool",
+  "backref",
+  "bboxes",
+  "binarize",
+  "bleu",
+  "Bourke",
+  "BRNN",
+  "BUET",
+  "cmap",
+  "conda",
+  "convolutional",
+  "Crossentropy",
+  "cuda",
+  "cudnn",
+  "cupy",
+  "deadlift",
+  "displacy",
+  "douchebag",
+  "downsample",
+  "downscaled",
+  "dreamstate",
+  "dtype",
+  "einsum",
+  "Enan",
+  "ents",
+  "fastapi",
+  "featurize",
+  "figsize",
+  "Flickr",
+  "gantt",
+  "geopandas",
+  "georeference",
+  "georeferencing",
+  "glutes",
+  "Haruf",
+  "hotlib",
+  "hparams",
+  "Hyperparameters",
+  "iloc",
+  "imparied",
+  "imread",
+  "imshow",
+  "inorder",
+  "ipynb",
+  "itos",
+  "journaling",
+  "Kaggle",
+  "Keras",
+  "linspace",
+  "Logits",
+  "LSTM",
+  "matplotlib",
+  "mlxtend",
+  "MNIST",
+  "multimodal",
+  "multination",
+  "multinomial",
+  "multiroom",
+  "multisystem",
+  "ndim",
+  "newaxis",
+  "numericalize",
+  "numericalized",
+  "numpy",
+  "optim",
+  "overconsumption",
+  "polygonize",
+  "preds",
+  "preorder",
+  "Presson",
+  "pretrained",
+  "PROPN",
+  "pydantic",
+  "pylint",
+  "pyplot",
+  "randn",
+  "rasterized",
+  "rasterizing",
+  "relu",
+  "Scikit",
+  "sentencizer",
+  "sents",
+  "silu",
+  "skimage",
+  "sklearn",
+  "softmax",
+  "spacy",
+  "SQLALCHEMY",
+  "stoi",
+  "subarray",
+  "tensorboard",
+  "thresholding",
+  "torchmetrics",
+  "torchtext",
+  "torchvision",
+  "tqdm",
+  "UNET",
+  "unitless",
+  "unsqueeze",
+  "Upsample",
+  "upscaled",
+  "vectorize",
+  "Vectorizer",
+  "vectorizing",
+  "xlabel",
+  "ylabel"
+ ],
+ "python.languageServer": "Pylance",
+ "editor.inlineSuggest.enabled": true,
+ "editor.minimap.enabled": false,
+ "gitlens.gitCommands.skipConfirmations": ["fetch:command", "switch:command"],
+ "notebook.lineNumbers": "on",
+ "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+ "editor.fontSize": 18,
+ "editor.tabSize": 4,
+ "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+ "redhat.telemetry.enabled": true,
+ "workbench.colorTheme": "Default Light+",
+ "editor.lineNumbers": "relative",
+ "editor.formatOnSave": true,
+ "python.defaultInterpreterPath": "C:\\Users\\Tasin\\anaconda3",
+ "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+ "workbench.sideBar.location": "right",
+ "workbench.activityBar.visible": false,
+ "prettier.tabWidth": 1
 }
