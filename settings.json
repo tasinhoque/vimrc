@@ -266,7 +266,7 @@
  "editor.tabSize": 4,
  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
  "redhat.telemetry.enabled": true,
- "workbench.colorTheme": "Default Light+",
+ "workbench.colorTheme": "Default Light Modern",
  "editor.lineNumbers": "relative",
  "editor.formatOnSave": true,
  "python.defaultInterpreterPath": "C:\\Users\\Tasin\\anaconda3",
