@@ -70,5 +70,6 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.iconTheme": "material-icon-theme"
 }
