@@ -1,3 +1,4 @@
+{
   "workbench.colorTheme": "Default Light Modern",
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -70,3 +71,4 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false
+}
