@@ -1,4 +1,3 @@
-{
   "workbench.colorTheme": "Default Light Modern",
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -33,7 +32,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.tabSize": 4,
   "editor.cursorBlinking": "solid",
   "editor.acceptSuggestionOnEnter": "off",
@@ -64,5 +63,10 @@
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "cSpell.userWords": ["Firebolt"],
   "editor.wordWrap": "on",
-  "workbench.sideBar.location": "right"
-}
+  "workbench.sideBar.location": "right",
+  "git.enableSmartCommit": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false
