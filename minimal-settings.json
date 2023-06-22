@@ -32,7 +32,7 @@
   "editor.lineNumbers": "relative",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
   "editor.fontSize": 16,
   "editor.tabSize": 4,
   "editor.cursorBlinking": "solid",
